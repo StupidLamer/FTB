@@ -1,0 +1,134 @@
+* {
+	box-sizing: border-box;
+}
+
+@font-face {
+	font-family: Natasha; /* Имя шрифта */
+	src: url(fonts/natasha.ttf); /* Путь к файлу со шрифтом */
+}
+
+a {
+	text-decoration: none;
+	display: inline-block;
+}
+
+ul, 
+li {
+	display: inline-block;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.header__nav {
+	height: 96px;
+	background-color: #171b1e;
+}
+
+.container {
+	max-width: 980px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+body {
+	font-family: 'Arial', serif;
+	font-weight: 400;
+	font-size: 10px;
+	line-height: 50px;
+	color: white;
+}
+
+.menu {
+	display: flex;
+	justify-content: space-between;
+}
+
+.menu ul {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.menu li {
+	height: 96px;
+}
+
+.menu a {
+	color: white;
+	line-height: 96px;
+	text-transform: uppercase;
+	vertical-align: middle;
+}
+
+.home-button {
+	font-family: 'Natasha', serif;
+	font-size: 36px;
+}
+
+.menu li:nth-child(1), 
+.menu li:nth-child(2) {
+	margin-right: 60px;
+}
+
+.header__main {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 600px;
+	background-color: #171b1e;
+}
+
+.header__main span{
+	font-size: 14px;
+	text-transform: uppercase;
+}
+
+.header__main span:first-child {
+	margin-bottom: 25px;
+}
+
+span.title {
+	font-size: 72px;
+	font-family: 'Natasha', serif;
+}
+
+.header__main button {
+	margin-top: 80px;
+	padding: 18px 36px;
+	text-transform: uppercase;
+	color: white;
+	font-weight: 700;
+	background-color: #e00130;
+	border-radius: 5px;
+	border: none;
+}
+
+main {
+	height: 900px;
+	background-color: white;
+}
+
+.main__container {
+	max-width: 780px;
+	margin: 0 auto;
+	padding: 100px 15px;
+}
+
+main div {
+	color: #171b1e;
+	font-size: 30px;
+	text-transform: uppercase;
+	font-family: 'Natasha', serif;
+}
+
+footer {
+	height: 100px;
+	background-color: #171b1e;
+}
+
+.footer__container {
+	max-width: 980px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
