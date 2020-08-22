@@ -9,6 +9,7 @@
 	</title>
 	<link href="css/normalize.css" rel="stylesheet" type="text/css">
 	<link href="css/main.css" rel="stylesheet" type="text/css">
+	<link href="css/player.css" rel="stylesheet" type="text/css">
 </head>
 
 
@@ -39,6 +40,64 @@
 		<main>
 			<div class="main__container">
 				Beats
+				<div class="player">
+					<div class="player__leftback">
+						<div class="player__poster"></div>
+						<div class="player__duration">
+							<div class="progress"></div>
+							<div class="start-time">00:00</div>
+							<div class="end-time">00:30</div>
+						</div>
+						<div class="play-stop"></div>
+						<div class="volume">
+							<div class="volume-off"></div>
+							<bgsound volume="-5000" class="volume-progress"></bgsound>
+							<div class="volume-on"></div>
+						</div>
+						<div class="player__buttons">
+							<div class="like">like</div>
+							<div class="dislike">dislike</div>
+						</div>
+					</div>
+
+					<div class="player__front">
+						<div class="player__poster"></div>
+						<div class="player__duration">
+							<div class="progress"></div>
+							<div class="start-time">00:00</div>
+							<div class="end-time">00:30</div>
+						</div>
+						<div class="play-stop"></div>
+						<div class="volume">
+							<div class="volume-off"></div>
+							<bgsound volume="-5000" class="volume-progress"></bgsound>
+							<div class="volume-on"></div>
+						</div>
+						<div class="player__buttons">
+							<div class="like">like</div>
+							<div class="dislike">dislike</div>
+						</div>
+					</div>
+
+					<div class="player__rightback">
+						<div class="player__poster"></div>
+						<div class="player__duration">
+							<div class="progress"></div>
+							<div class="start-time">00:00</div>
+							<div class="end-time">00:30</div>
+						</div>
+						<div class="play-stop"></div>
+						<div class="volume">
+							<div class="volume-off"></div>
+							<bgsound volume="-5000" class="volume-progress"></bgsound>
+							<div class="volume-on"></div>
+						</div>
+						<div class="player__buttons">
+							<div class="like">like</div>
+							<div class="dislike">dislike</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</main>
 
@@ -47,7 +106,8 @@
 				
 			</div>
 		</footer>
-
+		
+		<script src="script/player.js" type="text/javascript" charset="utf-8"></script>
 </body>
 
 
