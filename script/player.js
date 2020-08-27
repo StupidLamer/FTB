@@ -43,11 +43,10 @@ var durationRange = document.querySelector('.player__front .duration-progress')
 var startTime = document.querySelector('.player__front .start-time')
 var endTime = document.querySelector('.player__front .end-time')
 
-endTime.textContent = "00:" + Math.ceil(audio.duration);
-durationRange.max = Math.ceil(audio.duration);
+endTime.textContent = "00:" + Math.round(audio.duration);
 
 audio.addEventListener('timeupdate', function () {
-	durationRange.value = this.currentTime;
+	durationRange.value = 100 / this.duration * this.currentTime;
 	if (Math.ceil(audio.currentTime) < 10) {
 		startTime.textContent = "00:0" + Math.ceil(this.currentTime);
 	} else {
@@ -56,5 +55,5 @@ audio.addEventListener('timeupdate', function () {
 });
 
 durationRange.addEventListener('change', function () {
-	audio.currentTime = this.value;
+	audio.currentTime = this.value / 100 * audio.duration;
 });
